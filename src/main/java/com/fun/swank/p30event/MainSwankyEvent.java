@@ -8,11 +8,6 @@ import javax.swing.SwingUtilities;
 public class MainSwankyEvent {
 
   public static void main(String... params) {
-    SwingUtilities.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        com.fun.swank.p30event.parts.GuiPreper.createAndShowGUI();
-      }
-    });
+    SwingUtilities.invokeLater(com.fun.swank.p30event.parts.GuiPreper::createAndShowGUI);
   }
 }
