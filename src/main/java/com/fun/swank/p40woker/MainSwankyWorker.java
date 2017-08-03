@@ -13,10 +13,6 @@ import com.fun.swank.p40woker.parts.GuiPreper;
 public class MainSwankyWorker {
 
   public static void main(String... params) {
-    SwingUtilities.invokeLater(new Runnable() {
-      public void run() {
-        GuiPreper.createAndShowGUI();
-      }
-    });
+    SwingUtilities.invokeLater(GuiPreper::createAndShowGUI);
   }
 }

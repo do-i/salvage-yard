@@ -10,11 +10,6 @@ import com.fun.swank.p20simple.parts.GuiPreper;
 public class MainSimpleSwank {
 
   public static void main(String... params) {
-    SwingUtilities.invokeLater(new Runnable() {
-      @Override
-      public void run() {
-        GuiPreper.createAndShowGUI();
-      }
-    });
+    SwingUtilities.invokeLater(GuiPreper::createAndShowGUI);
   }
 }
